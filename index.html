@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modulador zine |Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="./sass/style.css">
+    <meta name="description" content="Noticias y reseñas sobre música en formatos analogicos.">
+    <meta name="keywords" content="Noticias, Reseñas, Musica, Vinilo, LP, Indie, Disquerias, Agenda, Reediciones">
+</head>
+<body>
+
+    <header>
+
+        <div class="header__desktop">
+            <div class="header__desktop--redes">
+                <a href="https://twitter.com/home"><div class="bi bi-twitter header__desktop--iconoRedes"></div></a>    
+                <a href="https://www.facebook.com/"><div class="bi bi-facebook header__desktop--iconoRedes"></div></a>    
+                <a href="https://www.instagram.com/"><div class="bi bi-instagram header__desktop--iconoRedes"></div></a>          
+            </div>    
+
+            <div class="header__desktop--contCentral">
+                <div class="header__desktop--logo">
+                    <h1><a href="./index.html">modulador</a></h1>
+                </div>
+                <nav class="header__desktop--menu">    
+                        <ul>
+                            <li><a href="./pages/noticias.html">NOTICIAS</a></li> 
+                            <br>    
+                            <li><a href="./pages/resenas.html">RESEÑAS</a></li>   
+                            <br>    
+                            <li><a href="./pages/agenda.html">AGENDA</a></li>
+                            <br>
+                            <li><a href="./pages/contacto.html">CONTACTO</a></li>    
+                         </ul>
+                </nav> 
+                            
+            </div>    
+            <div class="header__desktop--player">
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1dZ7OmDaHPrSwsZGyySFqy?utm_source=generator&theme=0" width="320" height="80" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+            </div>        
+    
+        </div>
+
+        <nav class="header__menu--mobile">
+            <ul> 
+                <li><a href="./pages/noticias.html"><i class="bi bi-newspaper"></i></a></li> 
+                <li><a href="./pages/resenas.html"><i class="bi bi-star-fill"></i></a></li>
+                <li><a href="./pages/agenda.html"><i class="bi bi-calendar-event"></i></a></li>
+                <li><a href="./pages/contacto.html"><i class="bi bi-envelope-paper"></i></a></li>
+            </ul>
+        </nav>       
+    </header>
+    
+    <main>
+
+        <section class="index__ultNoticias">
+            <div class="index__ultNoticias--titulo">
+                <h2>ULTIMAS NOTICIAS</h2>
+            </div>
+
+            <div id="index__ultNoticias--carousel" class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"   class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"   aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"   aria-label="Slide 3"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <a href="./pages/noticias/articulo01.html">
+                                <div class="carousel-item active">
+                                    <img src="./img/bowie.jpg" class="d-block w-100 index__ultNoticias--img" alt="david-bowie">
+                                <div class="carousel-caption d-none d-md-block index__ultNoticias--txt">
+                                    <h3>David Bowie es el artista que más vinilos vendió en el siglo XXI</h3>
+                                    <p>La campaña de reediciones de la música del Duque Blanco lo ha coronado como el mejor vendido desde el 2000 hasta la fecha. Conocé los datos en esta nota.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./pages/noticias/articulo02.html">
+                                <img src="./img/bandcamp.jpg" class="d-block w-100 index__ultNoticias--img" alt="disqueria>">
+                                <div class="carousel-caption d-none d-md-block index__ultNoticias--txt">
+                                    <h3>Bandcamp expande su servicio de fabricación de vinilos sin mínimo de tirada</h3>
+                                    <p>La plataforma anunció que en 2021 continúa su servicio de prensado y distribución de discos en vinilo.</p>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="carousel-item">
+                            <a href="./pages/noticias/articulo03.html">
+                                <img src="./img/rsd.jpg" class="d-block w-100 index__ultNoticias--img" alt="portada ia">
+                                <div class="carousel-caption d-none d-md-block index__ultNoticias--txt">
+                                    <h3>2021 fue el año con más ventas de vinilo desde 1981</h3>
+                                    <p>Un reciente estudio publicado por la Industria Fonográfica Británica (BPI) reveló que durante los últimos 12 meses se vendieron más de cinco millones de discos en vinilo. Conocé más acá.</p>
+                                </div>
+                            </a>
+                        </div>
+                        </div>
+                            <button class="carousel-control-prev" type="button"    data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"    data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+    
+
+            <div class="index__ultNoticias--mobile">
+                <div class="index__ultNoticias--articulo">
+                    <a href="./pages/noticias/articulo01.html"><img src="./img/bowie.jpg" alt="David Bowie"></a>
+                    <h3><a href="./pages/noticias/articulo01.html">David Bowie es el artista que más vinilos vendió en el siglo XXI</a></h3>
+                    <p><a href="./pages/noticias/articulo01.html">La campaña de reediciones de la música del Duque Blanco lo ha coronado como el mejor vendido desde el 2000 hasta la fecha. Conocé los datos en esta nota.</a></p>            
+                </div>
+                <div class="index__ultNoticias--articulo">
+                    <a href="./pages/noticias/articulo02.html"><img src="./img/bandcamp.jpg" alt="arte-bandcamp"></a>
+                    <h3><a href="./pages/noticias/articulo02.html">Bandcamp expande su servicio de fabricación de vinilos sin mínimo de tirada</a></h3>
+                    <p><a href="./pages/noticias/articulo02.html">La plataforma anunció que en 2021 continúa su servicio de prensado y distribución de discos en vinilo.</a></p>
+                </div>
+                <div class="index__ultNoticias--articulo">
+                    <a href="./pages/noticias/articulo03.html"> <img src="./img/rsd.jpg" alt="disqueria"></a>
+                    <h3><a href="./pages/noticias/articulo03.html">2021 fue el año con más ventas de vinilo desde 1981</a></h3>
+                    <p><a href="./pages/noticias/articulo03.html">Un reciente estudio publicado por la Industria Fonográfica Británica (BPI) reveló que durante los últimos 12 meses se vendieron más de cinco millones de discos en vinilo. Conocé más acá.</a></p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="index__ultResenas--titulo">
+                <h2>ULTIMAS RESEÑAS</h2>
+            </div>
+
+            <div class="index__ultResenas--grid">
+                <div class="index__ultResenas--articulo">
+                    <div class="index__ultResenas--portada">
+                        <a href="./pages/resenas/resena01.html"><img src="./img/cluster.jpg" alt="portada album"></a>
+                    </div>
+                    <div class="index__ultResenas--info">
+                        <h3><a href="./pages/resenas/resena01.html">Zuckerzeit</a></h3>
+                        <h4><a href="./pages/resenas/resena01.html">Cluster</a></h4>
+                        <p>1974</p>
+                        <div class="index__ultResenas--autor">
+                            <p>por: Autor</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="index__ultResenas--articulo">
+                    <div class="index__ultResenas--portada">
+                        <a href="./pages/resenas/resena02.html"><img src="./img/medicine.jpg" alt="portada album"></a>
+                    </div>
+                    <div class="index__ultResenas--info">
+                        <h3><a href="./pages/resenas/resena02.html">The Buried Life</a></h3>
+                        <h4><a href="./pages/resenas/resena02.html">Medicine</a></h4>
+                        <p>1993</p>
+                        <div class="index__ultResenas--autor">
+                            <p>por: Autor</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="index__ultResenas--articulo">
+                    <div class="index__ultResenas--portada">
+                        <a href="./pages/resenas/resena03.html"><img src="./img/pillos.jpg" alt="portada album"></a>
+                    </div>
+                    <div class="index__ultResenas--info">
+                        <h3><a href="./pages/resenas/resena03.html">Viajar Lejos</a></h3>
+                        <h4><a href="./pages/resenas/resena03.html">Los Pillos</a></h4>
+                        <p>1987</p>
+                        <div class="index__ultResenas--autor">
+                            <p>por: Autor</p>
+                        </div>    
+                    </div>
+                </div>
+                <div class="index__ultResenas--articulo">
+                    <div class="index__ultResenas--portada">
+                        <a href="./pages/resenas/resena04.html"><img src="./img/eno.jpg" alt="portada album"></a>
+                    </div>
+                    <div class="index__ultResenas--info">
+                        <h3><a href="./pages/resenas/resena04.html">Another Green World</a></h3>
+                        <h4><a href="./pages/resenas/resena04.html">Brian Eno</a></h4>
+                        <p>1981</p>
+                        <div class="index__ultResenas--autor">
+                            <p>por: Autor</p>
+                        </div>    
+                    </div>
+                </div>           
+            </div>    
+        </section>
+        
+    </main>
+    
+    <footer>
+        <div id="footer" class="row d-none d-sm-block d-sm-none d-md-block d-md-none d-lg-flex">
+            <div class="col-5 d-flex align-items-center justify-content-end pb-5">
+                <div class="text-end">
+                    <p class="fw-semibold">Modulador</p>
+                    <p class="fw-semibold">2022</p>
+                </div>        
+            </div>
+            <div class="col-2 d-flex justify-content-center align-items-center">
+                <img src="./img/logo-footer.png " id="animacionLp" class="img-fluid" alt="logo-footer">
+            </div>
+            <div class="col-5 d-flex align-items-center justify-content-start pb-3">
+                <div class="col-5 text-start">
+                    <p class="fw-semibold">POLITICAS</p>
+                    <p><a class="text-decoration-none" href="#">Privacidad</a></p>         
+                    <p><a class="text-decoration-none" href="#">Condiciones del servicio</a></p>
+                </div>    
+            </div>
+        </div>    
+    </footer>
+
+
+
+        <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+</body>
+</html>
